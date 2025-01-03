@@ -1,54 +1,237 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset='utf-8'>
-  <meta name='viewport' content='width=device-width'>
-  <title>Privacy Policy</title>
-  <style> body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding:1em; } </style>
-</head>
-<body>
-  <strong>Privacy Policy</strong>
-  <p>This privacy policy applies to the Factor36 app (hereinafter referred to as "Application") for mobile devices, developed by Cedric Maume (hereinafter referred to as "Service Provider") as an ad-supported service. This service is provided "AS IS".</p>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cedric Maume</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <!-- Navigation (Desktop) -->
+    <nav id="desktop-nav">
+      <div class="logo-container">
+        <img src="./assets/favicon.svg" alt="Personal Logo" class="personal-logo" />
+        <div class="logo">Cedric <b>Maume</b></div>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#desktop-nav">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
-  <br><strong>What information does the Application obtain and how is it used?</strong>
+    <!-- Navigation (Hamburger) -->
+    <nav id="hamburger-nav">
+      <div class="logo">Cedric Maume</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#desktop-nav" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
 
-  <br><strong>User Provided Information</strong>
-  <p>The Application does not require any registration, and no personal information is collected, stored, or transmitted by the Service Provider. All game data is stored locally on the user’s device.</p>
+    <!-- Profile Section -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Profile Picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Cedric Maume</h1>
+        <p class="section__text__p2">Computational Engineering Student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/cv.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/de.svg" alt="Germany Flag" class="icon" />
+          <img src="./assets/ca.svg" alt="Canada Flag" class="icon" />
+          <img src="./assets/us.svg" alt="USA Flag" class="icon" />
+        </div>
+      </div>
+    </section>
 
-  <br><strong>Automatically Collected Information</strong>
-  <p>The Application itself does not collect any automatically generated data such as device type, IP address, or operating system. However, third-party services integrated into the Application may collect such information as part of their operations. These third-party services are listed below with links to their respective privacy policies.</p>
+    <!-- Projects Section -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="project-grid">
+        <!-- Project One -->
+        <a href="https://play.google.com/store/apps/details?id=com.cedricmaume.factor36&hl=en" class="project-link">
+          <div class="details-container">
+            <div class="article-container">
+              <img src="./assets/factor36.png" alt="Factor36" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Factor36
+              <span class="project-icon">
+                <!--<img src="./assets/apple.png" alt="Apple Icon" />-->
+                <img src="./assets/android.png" alt="Android Icon" />
+                <img src="./assets/godot.png" alt="Godot Icon" />
+              </span>
+            </h2>
+            <p class="project-description">
+              An arithmetic-based mobile game in which you navigate a tile across a 5x5 board
+              by strategically adding and dividing numbers. Attempt to get as many points as
+              possible while not going over 36.
+            </p>
+          </div>
+        </a>
 
-  <br><strong>Does the Application collect precise real-time location information of the device?</strong>
-  <p>The Application does not collect precise real-time location information.</p>
+        <!-- Project Two -->
+        <a href="./projects/lightsaber.html" class="project-link">
+          <div class="details-container">
+            <div class="article-container">
+              <img src="./assets/lightsaber.png" alt="Lightsaber" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Lightsaber
+              <span class="project-icon">
+                <img src="./assets/fusion360.png" alt="Fusion360 Icon" />
+              </span>
+            </h2>
+            <p class="project-description">
+              A custom multi-part lightsaber designed in CAD and printed out of steel using an SLM 3D printer.
+            </p>
+          </div>
+        </a>
 
-  <br><strong>Do third parties see and/or have access to information obtained by the Application?</strong>
-  <p>The Application integrates third-party services that may collect and process data as per their privacy policies. These services include:</p>
-  <ul>
-    <li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
-    <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" rel="noopener noreferrer">AdMob</a></li>
-  </ul>
-  <p>The Service Provider does not have access to or control over any data collected by these third-party services.</p>
+        <!-- Project Three -->
+        <a href="./projects/server.html" class="project-link">
+          <div class="details-container">
+            <div class="article-container">
+              <img src="./assets/homeserver.png" alt="Home Server" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Home Server
+              <span class="project-icon">
+                <img src="./assets/freecad.png" alt="Freecad Icon" />
+                <img src="./assets/proxmox.png" alt="Proxmox Icon" />
+                <img src="./assets/docker.png" alt="Docker Icon" />
+              </span>
+            </h2>
+            <p class="project-description">
+              A cluster consisting of several PCs for the purpose of hosting a variety of
+              services. The enclosure is a custom design out of aluminium extrusion and 3D prints.
+            </p>
+          </div>
+        </a>
 
-  <br><strong>What are my opt-out rights?</strong>
-  <p>Users can stop all data collection by uninstalling the Application. The standard uninstall process available on mobile devices or app stores can be used to remove the Application from the device.</p>
+        <!-- Project Four -->
+        <a href="https://github.com/CedricM9/CedricM9.github.io" class="project-link">
+          <div class="details-container">
+            <div class="article-container">
+              <img src="./assets/website.png" alt="Website" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Website
+              <span class="project-icon">
+                <img src="./assets/html.png" alt="HTML Icon" />
+                <img src="./assets/css.png" alt="CSS Icon" />
+              </span>
+            </h2>
+            <p class="project-description">
+              This website was made using HTML and CSS, forked from a template to serve as a
+              personal portfolio with the intention of self-hosting it on a home server.
+            </p>
+          </div>
+        </a>
 
-  <br><strong>Data Retention Policy, Managing Your Information</strong>
-  <p>No personal or gameplay-related data is collected or stored by the Service Provider. Data collected by third-party services is managed according to their respective data retention policies.</p>
+        <!-- Project Five -->
+        <a href="https://github.com/CedricM9/awesome-dotfiles" class="project-link">
+          <div class="details-container">
+            <div class="article-container">
+              <img src="./assets/awesome.png" alt="AwesomeWM" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              AwesomeWM Dotfiles
+              <span class="project-icon">
+                <img src="./assets/lua.png" alt="Lua Icon" />
+              </span>
+            </h2>
+            <p class="project-description">
+              Files for a custom configuration of the Awesome Window Manager with custom widgets
+              and a unified look and feel.
+            </p>
+          </div>
+        </a>
 
-  <br><strong>Children</strong>
-  <p>The Application is not intended for children under the age of 13. No personal information is knowingly collected from children under 13 years of age. Parents or guardians who believe their child may have provided personal information to a third-party service through the Application should contact the third-party service directly.</p>
+        <!-- Project Six -->
+        <a href="https://github.com/CedricM9/SPH-Surface-Reconstruction" class="project-link">
+          <div class="details-container">
+            <div class="article-container">
+              <img src="./assets/sph.png" alt="SPH Surface Reconstruction" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              SPH Surface Reconstruction
+              <span class="project-icon">
+                <img src="./assets/c++.png" alt="C++ Icon" />
+              </span>
+            </h2>
+            <p class="project-description">
+              Software used for constructing a mesh over an SPH fluid simulation by way of the
+              Marching Cubes Algorithm. Designed in collaboration for a University Course.
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
 
-  <br><strong>Security</strong>
-  <p>The Service Provider does not process or store user data and therefore does not implement security measures related to personal data. Third-party services integrated into the Application apply their own security measures to protect any data they collect.</p>
+    <!-- Contact Section -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:work@cedricmaume.com">work@cedricmaume.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/cedric-maume-487630256">LinkedIn</a></p>
+        </div>
+      </div>
+<!--
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="socials-icon" onclick="location.href='https://linkedin.com/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="socials-icon" onclick="location.href='https://github.com/'" />
+      </div>
+-->
+    </section>
 
-  <br><strong>Changes</strong>
-  <p>This Privacy Policy may be updated from time to time. Any updates will be posted on this page, and the effective date will be revised accordingly. Continued use of the Application constitutes acceptance of any changes to this policy.</p>
-  <p>This privacy policy is effective as of 2024-12-27</p>
+    <!-- Footer -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#desktop-nav">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>&#169; 2025 Cedric Maume | <a href="./privacy.html">Privacy Policy</a></p>
+    </footer>
 
-  <br><strong>Your Consent</strong>
-  <p>By using the Application, you consent to the handling of information as described in this Privacy Policy, including any processing performed by third-party services.</p>
-
-  <br><strong>Contact Us</strong>
-  <p>If you have any questions about this Privacy Policy or the Application, please contact the Service Provider at <a href="mailto:dev@cedricmaume.com">dev@cedricmaume.com</a>.</p>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
