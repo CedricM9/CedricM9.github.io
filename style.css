@@ -2,6 +2,50 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+:root {
+  --dark-button-color: rgb(53,53,53); /* Define dark color */
+  --light-color: white; /* Define light color */
+  --text-color-dark: black; /* Define text color for light backgrounds */
+  --text-color-light: white; /* Define text color for dark backgrounds */
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: var(--dark-button-color);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+
+
+
+
+
+
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -192,6 +236,15 @@ section {
   border-radius: 25%;
 }
 
+.section__screenshot-container {
+  display: flex;
+  height: 800px;
+  width: 400px;
+  object-fit: cover;
+  margin: auto 0;
+}
+
+
 .section__text {
   align-self: center;
   text-align: center;
@@ -281,6 +334,12 @@ section {
   border-radius: 2rem;
 }
 
+.btn img {
+  height: 30px;
+}
+
+/* Btn 1: Right (Dark) */
+/* Btn 2: Left (Light) */
 .btn-color-1,
 .btn-color-2 {
   border: rgb(53, 53, 53) 0.1rem solid;
@@ -293,12 +352,13 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
+  background: var(--dark-button-color);
   color: white;
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: none;
+  color: black;
 }
 
 .btn-color-2 {
@@ -543,6 +603,7 @@ article .icon {
 
 
 
+
 /* CONTACT */
 
 #contact {
@@ -597,4 +658,46 @@ footer p {
 
 footer a:hover {
   text-decoration: none;
+}
+
+footer nav a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 18);
+}
+
+
+
+
+
+.text-container {
+  max-width: 1300px;
+  margin: 0 auto; /* Center the text container */
+  padding: 20px; /* Add some padding for better spacing */
+  font-family: Arial, sans-serif; /* Optional: Define a font family */
+  line-height: 1.6; /* Adjust line height for better readability */
+  font-size: 16px; /* Set the base font size */
+  color: #333; /* Darker text color for readability */
+}
+
+.text-container strong {
+  font-size: 18px; /* Slightly larger font size for headings */
+  color: #000; /* Bold headings in black */
+}
+
+.text-container ul {
+  margin-left: 50px; /* Indent the list */
+  list-style-type: disc; /* Use bullet points */
+}
+
+.text-container a {
+  color: #375a7f
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.text-container a:hover {
+  color: #2c4a64; 
+  text-decoration: none; /* Remove underline from links */
 }
