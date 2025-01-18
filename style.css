@@ -110,6 +110,8 @@ a:hover {
   cursor: default;
 }
 
+
+
 .personal-logo {
   height: 3rem;
 }
@@ -701,3 +703,14 @@ footer nav a:hover {
   color: #2c4a64; 
   text-decoration: none; /* Remove underline from links */
 }
+
+.logo a {
+  text-decoration: none; /* Remove underline or decoration */
+}
+
+.logo a:hover {
+  text-decoration: none; /* Ensure no decoration on hover */
+  color: black;
+}
+
+
