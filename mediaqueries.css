@@ -124,3 +124,13 @@
     }
 }
 
+
+@media (max-width: 768px) {
+  #profile {
+    margin-bottom: 15rem; /* Adjust this value as needed */
+  }
+
+  #text {
+    margin-top: 15rem; /* Adds space between the sections */
+  }
+}

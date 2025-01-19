@@ -66,7 +66,8 @@ p {
 /* TRANSITION */
 
 a,
-.btn {
+.btn,
+.btn-icon {
   transition: all 300ms ease;
 }
 
@@ -214,6 +215,14 @@ section {
 
 .section-container {
   display: flex;
+}
+
+
+#text {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
 }
 
 /* PROFILE SECTION */
@@ -714,3 +723,116 @@ footer nav a:hover {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.project_profile_container {
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center;
+  gap: 120px;
+  flex-wrap: wrap; /* Allows wrapping for responsiveness */
+}
+
+.project_profile_screenshot {
+  flex: 1; /* Make the screenshot take equal space */
+  min-width: 300px; /* Minimum width for the screenshot */
+}
+
+.project_profile_screenshot img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.project_profile_content {
+  flex: 1; /* Make the right content take equal space */
+  display: flex;
+  flex-direction: column; /* Stack icon above text */
+  align-items: center; /* Center icon horizontally */
+  justify-content: center; /* Center content vertically with left column */
+  gap: 20px;
+  min-width: 300px; /* Minimum width for the right column */
+  text-align: center; /* Center-align text */
+}
+
+.project_profile_icon img {
+  width: 120px; /* Adjust icon size */
+  height: auto;
+}
+
+.project_profile_text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+  .project_profile_container {
+    flex-direction: column; /* Stack the screenshot above the content */
+    align-items: center;
+  }
+
+  .project_profile_screenshot {
+    width: 100%;
+  }
+
+  .project_profile_content {
+    width: 100%;
+    align-items: center;
+    text-align: center; /* Center-align the text */
+  }
+
+}
+
+
+.btn-icon-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+  gap: 1rem; /* Space between buttons */
+}
+
+
+.btn-icon {
+  font-weight: 400;
+  font-size: 20px; /* Keep the font size as large as the icon */
+  line-height: 1; /* Prevent extra spacing caused by default line-height */
+  transition: all 300ms ease;
+  padding: 1.2rem 1.5rem; /* Adjust padding to prevent overflow */
+  width: 180px; /* Allow button to adjust width to fit content */
+  border-radius: 2rem;
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center icon and text vertically */
+  justify-content: center; /* Center icon and text horizontally */
+  gap: 0.5rem; /* Add space between the icon and text */
+  box-sizing: border-box; /* Ensure padding is included within button size */
+  overflow: hidden; /* Prevent content from overflowing */
+}
+
+.btn-icon.btn-full-width {
+  flex-basis: 67%; /* Make the button take full width of the container */
+  text-align: center; /* Center-align text and icon */
+}
+
+
+.btn-icon img {
+  height: 30px; /* Icon height */
+  width: auto; /* Maintain aspect ratio */
+}
