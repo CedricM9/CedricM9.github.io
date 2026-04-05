@@ -1,5 +1,18 @@
 body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Cantarell", sans-serif;
   line-height: 1.7;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+main {
+  flex: 1; /* pushes footer down */
 }
 
 #article {
@@ -37,7 +50,11 @@ body {
 /* Images */
 #article img {
   width: 100%;
+  max-width: 386px; /* 👈 controls max size */
+  height: auto;
   border-radius: 8px;
+  display: block;
+  margin: 0 auto; /* center when stacked */
 }
 
 /* Typography */
@@ -66,16 +83,27 @@ code {
 }
 
 pre {
-  width: 100%;
+  width: 90%;
+  margin: 2em auto; /* centers horizontally */
+  margin-top: 4em;
+  margin-bottom: 4em;
   background: #111;
   color: #eee;
-  padding: 16px;
+  padding: 0px;
   border-radius: 8px;
   overflow-x: auto;
 }
 
+#article ul {
+  width: 90%;
+  margin: 1.5em auto;
+  list-style-position: inside;
+  padding-left: 0;
+  color: rgb(85, 85, 85);
+}
+
 .meta {
-  color: var(--muted);
+  color: #666;
   font-size: 0.9em;
   margin-bottom: 2em;
 }

@@ -58,11 +58,19 @@
 }
 
 body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   font-family: "Cantarell", sans-serif;
 }
 
 html {
+  height: 100%;
   scroll-behavior: smooth;
+}
+
+main {
+  flex: 1; /* pushes footer down */
 }
 
 p {
@@ -213,10 +221,9 @@ text-decoration: none;
 
 section {
   padding-top: 4vh;
-  height: 96vh;
+  min-height: 96vh; /* ← Use min-height instead */
   margin: 0 10rem;
   box-sizing: border-box;
-  min-height: fit-content;
 }
 
 .section-container {
@@ -666,8 +673,9 @@ article .icon {
 
 footer {
   height: 26vh;
-  margin: 0rem 1rem;
-  margin-top: 0rem;
+  margin-top: 4rem;
+  padding: 2rem 0;
+    border-top: 1px solid #eee;
 }
 
 footer p {
@@ -710,7 +718,7 @@ footer nav a:hover {
 }
 
 .text-container a {
-  color: #375a7f
+  color: #375a7f;
   text-decoration: none; /* Remove underline from links */
   transition: color 0.3s ease; /* Smooth color transition */
 }
