@@ -3,10 +3,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 :root {
-  --dark-button-color: rgb(53,53,53); /* Define dark color */
+  --dark-button-color: #353535;
   --light-color: white; /* Define light color */
-  --text-color-dark: black; /* Define text color for light backgrounds */
+  --text-color-dark: #1a1a1a;
   --text-color-light: white; /* Define text color for dark backgrounds */
+  
+
+  --text-dark: #1a1a1a;
+  --text-light: #ffffff;
+  --bg: #ffffff;
+  --accent: #353535;
 }
 
 .btn-color-1,
@@ -52,7 +58,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Cantarell", sans-serif;
 }
 
 html {
@@ -660,7 +666,8 @@ article .icon {
 
 footer {
   height: 26vh;
-  margin: 0 1rem;
+  margin: 0rem 1rem;
+  margin-top: 0rem;
 }
 
 footer p {
