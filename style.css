@@ -511,9 +511,9 @@ article .icon {
 /* PROJECTS SECTION */
 
 #projects {
-  justify-content: flex-start;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  min-height: unset;
+  padding: 14rem 0;
+
 }
 
 .color-container {
@@ -644,6 +644,8 @@ article .icon {
 /* CONTACT */
 
 #contact {
+  min-height: unset;
+  padding: 10rem 0;
   justify-content: center;
   align-items: center;
 }
