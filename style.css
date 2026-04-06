@@ -96,6 +96,12 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
+  margin-bottom: 0rem;
+}
+
+#desktop-nav {
+  padding: 6rem 0;
+  border-bottom: 1px solid #eee;
 }
 
 .nav-links {
@@ -141,6 +147,8 @@ a:hover {
 
 #hamburger-nav {
   display: none;
+  padding: 6rem 0;
+  border-bottom: 1px solid #eee;
 }
 
 .hamburger-menu {
@@ -220,10 +228,12 @@ text-decoration: none;
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
-  min-height: 96vh; /* ← Use min-height instead */
+  min-height: 100svh;
   margin: 0 10rem;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .section-container {
@@ -241,10 +251,11 @@ section {
 /* PROFILE SECTION */
 
 #profile {
-  display: flex;
+  min-height: calc(100svh - 30vh);  /* subtract nav height */
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   gap: 5rem;
-  height: 80vh;
 }
 
 .section__pic-container {
@@ -500,7 +511,9 @@ article .icon {
 /* PROJECTS SECTION */
 
 #projects {
-  position: relative;
+  justify-content: flex-start;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .color-container {
@@ -631,11 +644,8 @@ article .icon {
 /* CONTACT */
 
 #contact {
-  display: flex;
   justify-content: center;
-  flex-direction: column;
-  height: 70vh;
-  margin-top: 35rem; /* Add space between projects and contact */
+  align-items: center;
 }
 
 .contact-info-upper-container {
