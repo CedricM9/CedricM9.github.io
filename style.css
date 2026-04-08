@@ -271,14 +271,6 @@ section {
   border-radius: 25%;
 }
 
-.section__screenshot-container {
-  display: flex;
-  height: 800px;
-  width: 400px;
-  object-fit: cover;
-  margin: auto 0;
-}
-
 
 .section__text {
   align-self: center;
@@ -751,30 +743,6 @@ footer nav a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.project_profile_container {
-  display: flex;
-  align-items: center; /* Center content vertically */
-  justify-content: center;
-  gap: 120px;
-  flex-wrap: wrap; /* Allows wrapping for responsiveness */
-}
-
 .project_profile_screenshot {
   flex: 1; /* Make the screenshot take equal space */
   min-width: 300px; /* Minimum width for the screenshot */
@@ -784,28 +752,6 @@ footer nav a:hover {
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-
-.project_profile_content {
-  flex: 1; /* Make the right content take equal space */
-  display: flex;
-  flex-direction: column; /* Stack icon above text */
-  align-items: center; /* Center icon horizontally */
-  justify-content: center; /* Center content vertically with left column */
-  gap: 20px;
-  min-width: 300px; /* Minimum width for the right column */
-  text-align: center; /* Center-align text */
-}
-
-.project_profile_icon img {
-  width: 120px; /* Adjust icon size */
-  height: auto;
-}
-
-.project_profile_text {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
 
 
@@ -820,7 +766,7 @@ footer nav a:hover {
     width: 100%;
   }
 
-  .project_profile_content {
+  .app_showcase_content {
     width: 100%;
     align-items: center;
     text-align: center; /* Center-align the text */
@@ -862,4 +808,65 @@ footer nav a:hover {
 .btn-icon img {
   height: 30px; /* Icon height */
   width: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* App Showcase */
+
+#app_showcase {
+  min-height: calc(100svh - 30vh);  /* subtract nav height */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+
+.app_showcase_container {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  flex-wrap: wrap; /* Allows wrapping for responsiveness */
+}
+
+.app_showcase_screenshot {
+  display: flex;
+  height: 700px;
+  justify-content: center;
+  width: 400px;
+  object-fit: cover;
+  margin: auto 0;
+}
+
+.app_showcase_content {
+  flex: 1; /* Make the right content take equal space */
+  display: flex;
+  flex-direction: column; /* Stack icon above text */
+  align-items: center; /* Center icon horizontally */
+  justify-content: center; /* Center content vertically with left column */
+  gap: 20px;
+  min-width: 300px; /* Minimum width for the right column */
+  text-align: center; /* Center-align text */
+}
+
+.app_showcase_content_icon img {
+  width: 120px; /* Adjust icon size */
+  height: auto;
+}
+
+.app_showcase_content_text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
