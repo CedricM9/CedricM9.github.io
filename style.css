@@ -101,7 +101,6 @@ nav {
 
 #desktop-nav {
   padding: 6rem 0;
-  border-bottom: 1px solid #eee;
 }
 
 .nav-links {
@@ -776,11 +775,17 @@ footer nav a:hover {
 
 
 .btn-icon-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; /* Allow buttons to wrap to the next line */
-  gap: 1rem; /* Space between buttons */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
+
+.btn-icon.btn-full-width {
+  grid-column: 1 / -1; /* span all columns */
+  width: 100%;
+}
+
+
 
 
 .btn-icon {
@@ -800,6 +805,7 @@ footer nav a:hover {
 }
 
 .btn-icon.btn-full-width {
+  width: 360px + 2rem; /* Allow button to adjust width to fit content */
   flex-basis: 67%; /* Make the button take full width of the container */
   text-align: center; /* Center-align text and icon */
 }
