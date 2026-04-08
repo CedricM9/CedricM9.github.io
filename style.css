@@ -178,7 +178,6 @@ a:hover {
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3 ease-in-out;
 }
 
 .menu-links a {
@@ -187,8 +186,11 @@ a:hover {
   text-align: left;
   font-size: 1.5rem;
   color: black;
-text-decoration: none;
-  transition: all 0.3 ease-in-out;
+  text-decoration: none;
+}
+
+.menu-links a:hover {
+  color: grey;
 }
 
 .menu-links li {
@@ -703,7 +705,7 @@ footer nav a:hover {
   max-width: 1300px;
   margin: 0 auto; /* Center the text container */
   padding: 20px; /* Add some padding for better spacing */
-  font-family: Arial, sans-serif; /* Optional: Define a font family */
+  font-family: Cantarell; /* Optional: Define a font family */
   line-height: 1.6; /* Adjust line height for better readability */
   font-size: 16px; /* Set the base font size */
   color: #333; /* Darker text color for readability */
