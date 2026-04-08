@@ -96,6 +96,11 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
+  margin-bottom: 0rem;
+}
+
+#desktop-nav {
+  padding: 6rem 0;
 }
 
 .nav-links {
@@ -141,6 +146,7 @@ a:hover {
 
 #hamburger-nav {
   display: none;
+  padding: 6rem 0;
 }
 
 .hamburger-menu {
@@ -220,10 +226,12 @@ text-decoration: none;
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
-  min-height: 96vh; /* ← Use min-height instead */
+  min-height: 100svh;
   margin: 0 10rem;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .section-container {
@@ -241,10 +249,11 @@ section {
 /* PROFILE SECTION */
 
 #profile {
-  display: flex;
+  min-height: calc(100svh - 30vh);  /* subtract nav height */
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   gap: 5rem;
-  height: 80vh;
 }
 
 .section__pic-container {
@@ -258,14 +267,6 @@ section {
 
 .section__pic-container img{
   border-radius: 25%;
-}
-
-.section__screenshot-container {
-  display: flex;
-  height: 800px;
-  width: 400px;
-  object-fit: cover;
-  margin: auto 0;
 }
 
 
@@ -500,7 +501,9 @@ article .icon {
 /* PROJECTS SECTION */
 
 #projects {
-  position: relative;
+  min-height: unset;
+  padding: 14rem 0;
+
 }
 
 .color-container {
@@ -631,11 +634,10 @@ article .icon {
 /* CONTACT */
 
 #contact {
-  display: flex;
+  min-height: unset;
+  padding: 10rem 0;
   justify-content: center;
-  flex-direction: column;
-  height: 70vh;
-  margin-top: 35rem; /* Add space between projects and contact */
+  align-items: center;
 }
 
 .contact-info-upper-container {
@@ -739,30 +741,6 @@ footer nav a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.project_profile_container {
-  display: flex;
-  align-items: center; /* Center content vertically */
-  justify-content: center;
-  gap: 120px;
-  flex-wrap: wrap; /* Allows wrapping for responsiveness */
-}
-
 .project_profile_screenshot {
   flex: 1; /* Make the screenshot take equal space */
   min-width: 300px; /* Minimum width for the screenshot */
@@ -772,28 +750,6 @@ footer nav a:hover {
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-
-.project_profile_content {
-  flex: 1; /* Make the right content take equal space */
-  display: flex;
-  flex-direction: column; /* Stack icon above text */
-  align-items: center; /* Center icon horizontally */
-  justify-content: center; /* Center content vertically with left column */
-  gap: 20px;
-  min-width: 300px; /* Minimum width for the right column */
-  text-align: center; /* Center-align text */
-}
-
-.project_profile_icon img {
-  width: 120px; /* Adjust icon size */
-  height: auto;
-}
-
-.project_profile_text {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
 
 
@@ -808,7 +764,7 @@ footer nav a:hover {
     width: 100%;
   }
 
-  .project_profile_content {
+  .app_showcase_content {
     width: 100%;
     align-items: center;
     text-align: center; /* Center-align the text */
@@ -818,11 +774,17 @@ footer nav a:hover {
 
 
 .btn-icon-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; /* Allow buttons to wrap to the next line */
-  gap: 1rem; /* Space between buttons */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
+
+.btn-icon.btn-full-width {
+  grid-column: 1 / -1; /* span all columns */
+  width: 100%;
+}
+
+
 
 
 .btn-icon {
@@ -842,6 +804,7 @@ footer nav a:hover {
 }
 
 .btn-icon.btn-full-width {
+  width: 360px + 2rem; /* Allow button to adjust width to fit content */
   flex-basis: 67%; /* Make the button take full width of the container */
   text-align: center; /* Center-align text and icon */
 }
@@ -850,4 +813,65 @@ footer nav a:hover {
 .btn-icon img {
   height: 30px; /* Icon height */
   width: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* App Showcase */
+
+#app_showcase {
+  min-height: calc(100svh - 30vh);  /* subtract nav height */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+
+.app_showcase_container {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  flex-wrap: wrap; /* Allows wrapping for responsiveness */
+}
+
+.app_showcase_screenshot {
+  display: flex;
+  height: 700px;
+  justify-content: center;
+  width: 400px;
+  object-fit: cover;
+  margin: auto 0;
+}
+
+.app_showcase_content {
+  flex: 1; /* Make the right content take equal space */
+  display: flex;
+  flex-direction: column; /* Stack icon above text */
+  align-items: center; /* Center icon horizontally */
+  justify-content: center; /* Center content vertically with left column */
+  gap: 20px;
+  min-width: 300px; /* Minimum width for the right column */
+  text-align: center; /* Center-align text */
+}
+
+.app_showcase_content_icon img {
+  width: 120px; /* Adjust icon size */
+  height: auto;
+}
+
+.app_showcase_content_text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }

@@ -3,7 +3,6 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Cantarell", sans-serif;
-  line-height: 1.7;
 }
 
 html {
@@ -73,6 +72,7 @@ h2 {
 
 p {
   margin: 1em 0;
+  line-height: 1.7;
 }
 
 code {
