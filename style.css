@@ -1,48 +1,51 @@
-/* GENERAL */
+/* STYLE.CSS */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 :root {
-  --dark-button-color: #353535;
-  --light-color: white; /* Define light color */
-  --text-color-dark: #1a1a1a;
-  --text-color-light: white; /* Define text color for dark backgrounds */
-  
-
-  --text-dark: #1a1a1a;
+  --text-primary: #1a1a1a;
+  --text-secondary:  #555555;
   --text-light: #ffffff;
-  --bg: #ffffff;
-  --accent: #353535;
+
+  --bg: #FFFFFF;
+  --bg-hover: #EBECED;
+  --bg-subtle:       #F8F9FA;
+
+  --accent:          #353535;
+  --accent-hover:    #6e6d6d;
 }
 
-.btn-color-1,
-.btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+
+/* BUTTONS */
+
+.button-empty, 
+.button-filled {
+  border: var(--accent) 0.1rem solid;
 }
 
-.btn-color-1:hover,
-.btn-color-2:hover {
+.button-empty {
+  background: var(--bg);
+  color: var(--text-primary);
+}
+
+.button-filled {
+  background: var(--accent);
+  color: var(--text-light);
+}
+
+.button-empty:hover,
+.button-filled:hover {
   cursor: pointer;
 }
 
-.btn-color-1,
-.btn-color-2:hover {
-  background: var(--dark-button-color);
-  color: white;
+.button-empty:hover {
+  background: var(--bg-hover);
 }
 
-.btn-color-1:hover {
-  background: rgb(0, 0, 0);
+.button-filled:hover {
+  background: var(--accent-hover);
+  border: var(--accent-hover) 0.1rem solid;
 }
-
-.btn-color-2 {
-  background: none;
-}
-
-.btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
-}
-
 
 
 
