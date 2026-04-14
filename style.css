@@ -340,87 +340,27 @@ nav {
 
 
 
-/* ABOUT SECTION */
 
-#about {
-  position: relative;
+
+/* PROJECTS SECTION */
+
+#projects {
+  min-height: unset;
+  padding: 14rem 0;
 }
 
-.about-containers {
-  display: grid; /* Enable grid layout */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Auto-adjust columns */
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  width: 100%;
-  max-width: 1300px; /* Set a maximum width for the grid */
-}
-
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-}
-
-.about-containers,
-.about-details-container {
-  display: flex;
-}
-
-.about-pic {
-  border-radius: 2rem;
-}
-
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-}
-
-.details-container {
-  padding: 0;
+.project-tile {
   flex: 1;
-  background: #F8F9FA;
+  background: var(--bg-subtle);
   border-radius: 2rem;
   border: 0.1rem solid #DEE2E6;
-  /*border-color: rgb(163, 163, 163);*/
   text-align: left;
   overflow: hidden;
   display: flex;
   flex-direction: column;
 }
 
-.section-container {
-  gap: 4rem;
-  height: 80%;
-}
-
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-}
-
-/* EXPERIENCE SECTION */
-
-#experience {
-  position: relative;
-}
-
-.experience-sub-title {
-  color: rgb(85, 85, 85);
-  font-weight: 400;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
-}
-
-.experience-details-container {
-  display: flex;
-  justify-content: center;
-  /*flex-direction: column;*/ 
-  margin: 0 auto;
-}
-
-.article-container {
+.project-img-container {
   display: flex;
   text-align: initial;
   flex-wrap: wrap;
@@ -429,147 +369,70 @@ nav {
   justify-content: space-around;
 }
 
-article {
-  display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
-}
-
-article .icon {
-  cursor: default;
-}
-
-/* PROJECTS SECTION */
-
-#projects {
-  min-height: unset;
-  padding: 14rem 0;
-
-}
-
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
-}
-
 .project-img {
-  width: 100%;
-  height: 100%;
   max-height: 300px;
-  object-fit: cover;
-  overflow: hidden; /* Hides the parts of the image that exceed the container */
-  
+  overflow: hidden;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: inherit; /* Inherit parent's border-radius */
-  display: block; /* Remove extra spacing */
+  border-radius: inherit;
+  display: block;
 }
 
 .project-title {
   margin-left: 2rem;
   margin-right: 2rem;
   margin-top: 1.5rem;
-  color: black;
-  display: flex; /* Enables flexbox */
-  justify-content: space-between; /* Pushes text to the left and icon to the right */
-  align-items: center; /* Vertically aligns the items */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-secondary);
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
-
 
 .project-icon img {
-  width: 2rem; /* Restrict the size of the icon */
-  height: 2rem; /* Maintain a square aspect ratio */
-  object-fit: contain; /* Ensures the image scales correctly */
+  width: 2rem; 
+  height: 2rem; 
+  object-fit: contain;
 }
-
-
 
 .project-description {
   margin-left: 2rem;
   margin-right: 2rem;
   margin-bottom: 2rem;
   margin-top: -1.5rem;
-  color: black;
+  color: var(--text-secondary);
 }
 
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
-}
-
-
-
-
-/* Default layout: single column */
 .project-grid {
     display: grid;
     gap: 30px;
     padding: 20px;
     grid-template-columns: 1fr;
-    max-width: 1300px; /* Sets the maximum width of the grid */
-    margin: 0 auto; /* Centers the grid horizontally */
+    max-width: 1300px; 
+    margin: 0 auto;
     padding-top: 100px;
 }
 
-
-.project {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.project h3 {
-    margin-top: 0;
-    color: #333;
-}
-
-.project p {
-    color: #666;
-}
-
-.contact-info-container a{
-  text-decoration: none;
-}
-
-
-/* Project Link */
 .project-link {
-  text-decoration: none; /* No underline on the <a> itself */
-  color: inherit; /* Keep text color consistent */
-  display: block; /* Make the container clickable */
-  border-radius: 2rem; /* Rounded corners */
-  overflow: hidden; /* Ensures content respects the border-radius */
-  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions */
-  position: relative; /* Required for proper clipping */
+  text-decoration: none;
+  color: inherit; 
+  display: block; 
+  border-radius: 2rem; 
+  overflow: hidden; 
+  transition: transform 0.2s ease, box-shadow 0.2s ease; 
+  position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
 }
 
-/* Hover Effect */
 .project-link:hover {
   transform: scale(1.05); /* Slightly increase size */
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a shadow */
 }
-
-/* Remove underline for child elements explicitly */
-.project-link h2, 
-.project-link p {
-  text-decoration: none; /* No underline for child elements */
-}
-
-/* Prevent underlining on hover for the <a> and its children */
-.project-link:hover,
-.project-link:hover h2,
-.project-link:hover p {
-  text-decoration: none; /* Ensure no underline on hover */
-}
-
 
 
 
@@ -582,36 +445,30 @@ article .icon {
   align-items: center;
 }
 
-.contact-info-upper-container {
+.contact-info-box {
   display: flex;
   justify-content: center;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
+  border: var(--text-secondary) 0.1rem solid;
   margin: 2rem auto;
   padding: 0.5rem;
 }
 
-.contact-info-container {
+.contact-info-item {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
   margin: 1rem;
-}
-
-.contact-info-container p {
   font-size: larger;
-}
-
-.contact-icon {
-  cursor: default;
 }
 
 .email-icon {
   height: 2.5rem;
 }
+
+
+
 
 /* FOOTER SECTION */
 
