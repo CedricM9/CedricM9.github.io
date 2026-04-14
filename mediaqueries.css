@@ -137,3 +137,9 @@
     display: block;
   }
 }
+
+@media (max-width: 700px) {
+  .split {
+    flex-direction: column;
+  }
+}
