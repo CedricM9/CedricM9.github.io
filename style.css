@@ -3,16 +3,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 :root {
-  --text-primary:    #1a1a1a;
-  --text-secondary:  #555555;
-  --text-light:      #ffffff;
+  --text-primary:       #1a1a1a;
+  --text-secondary:     #555555;
+  --text-light:         #ffffff;
+  --text-primary-hover: #808080;
 
-  --bg:              #FFFFFF;
-  --bg-hover:        #EBECED;
-  --bg-subtle:       #F8F9FA;
+  --bg:                 #FFFFFF;
+  --bg:                 #F8F8F6;
+  --bg-hover:           #EBECED;
+  --bg-subtle:          #F8F9FA;
 
-  --accent:          #353535;
-  --accent-hover:    #6e6d6d;
+  --accent:             #353535;
+  --accent-hover:       #6e6d6d;
 }
 
 
@@ -39,6 +41,15 @@ main {
 
 p {
   color: var(--text-secondary);
+}
+
+a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--text-primary-hover);
 }
 
 
@@ -104,6 +115,11 @@ a,
 
 /* DESKTOP NAV */
 
+
+#desktop-nav {
+  padding: 6rem 0;
+}
+
 nav,
 .nav-links {
   display: flex;
@@ -113,11 +129,6 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
-  margin-bottom: 0rem;
-}
-
-#desktop-nav {
-  padding: 6rem 0;
 }
 
 .nav-links {
@@ -126,38 +137,34 @@ nav {
   font-size: 1.5rem;
 }
 
-a {
-  color: black;
-  text-decoration: none;
-  text-decoration-color: white;
-}
-
-a:hover {
-  color: grey;
+.nav-links a:hover {
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: #b5b5b5;
 }
 
-.logo {
+.name {
   font-size: 2rem;
 }
 
-.logo:hover {
-  cursor: default;
+
+.name a:hover {
+  color: var(--text-primary);
 }
 
 
-
-.personal-logo {
+.logo {
   height: 3rem;
 }
 
-.logo-container {
+.logo-name-container {
     display: flex;
-    align-items: center; /* Vertically center the items */
-    gap: 32px; /* Add spacing between the logo and text */
+    align-items: center;
+    gap: 32px;
 }
+
+
+
 
 /* HAMBURGER MENU */
 
@@ -672,7 +679,7 @@ footer nav a:hover {
   color: grey;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: #b5b5b5;
 }
 
 
@@ -708,15 +715,6 @@ footer nav a:hover {
 .text-container a:hover {
   color: #2c4a64; 
   text-decoration: none; /* Remove underline from links */
-}
-
-.logo a {
-  text-decoration: none; /* Remove underline or decoration */
-}
-
-.logo a:hover {
-  text-decoration: none; /* Ensure no decoration on hover */
-  color: black;
 }
 
 
