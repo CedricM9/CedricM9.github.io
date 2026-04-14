@@ -74,7 +74,7 @@ main {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: #555555;
 }
 
 /* TRANSITION */
@@ -679,22 +679,30 @@ footer {
   height: 26vh;
   margin-top: 4rem;
   padding: 2rem 0;
-    border-top: 1px solid #eee;
 }
 
 footer p {
   text-align: center;
 }
 
+footer nav a{
+  color: #000000;
+}
+
+footer a {
+  color: #555555;
+}
+
 footer a:hover {
   text-decoration: none;
+  color: lightgrey;
 }
 
 footer nav a:hover {
   color: grey;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 18);
+  text-decoration-color: rgb(181, 181, 181);
 }
 
 
