@@ -46,6 +46,11 @@
   section {
     margin: 0 1.5rem;
   }
+  .app_showcase_content {
+    width: 100%;
+    align-items: center;
+    text-align: center; /* Center-align the text */
+  }
 }
 
 /* === 600px and below === */

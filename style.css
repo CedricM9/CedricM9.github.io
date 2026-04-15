@@ -3,18 +3,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 :root {
-  --text-primary:       #1a1a1a;
-  --text-secondary:     #555555;
-  --text-light:         #ffffff;
-  --text-primary-hover: #808080;
+  --text-primary:         #1a1a1a;
+  --text-secondary:       #555555;
+  --text-light:           #ffffff;
+  --text-primary-hover:   #808080;
+  --text-secondary-hover: #d3d3d3;
 
-  --bg:                 #FFFFFF;
+  --bg:                   #FFFFFF;
   --bg-2:                 #F8F8F6;
-  --bg-hover:           #EBECED;
-  --bg-subtle:          #F8F9FA;
+  --bg-hover:             #EBECED;
+  --bg-subtle:            #F8F9FA;
 
-  --accent:             #353535;
-  --accent-hover:       #6e6d6d;
+  --accent:               #353535;
+  --accent-hover:         #6e6d6d;
 }
 
 
@@ -88,7 +89,7 @@ section {
 
 a,
 .button,
-.btn-icon {
+.button-icon {
   transition: all 200ms ease;
 }
 
@@ -482,144 +483,16 @@ footer p {
   text-align: center;
 }
 
-footer nav a{
-  color: #000000;
+footer p a {
+  color: var(--text-secondary);
 }
 
-footer a {
-  color: #555555;
-}
+
 
 footer a:hover {
   text-decoration: none;
-  color: lightgrey;
+  color: var(--text-secondary-hover);
 }
-
-footer nav a:hover {
-  color: grey;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: #b5b5b5;
-}
-
-
-
-
-
-.text-container {
-  max-width: 1300px;
-  margin: 0 auto; /* Center the text container */
-  padding: 20px; /* Add some padding for better spacing */
-  font-family: Cantarell; /* Optional: Define a font family */
-  line-height: 1.6; /* Adjust line height for better readability */
-  font-size: 16px; /* Set the base font size */
-  color: #333; /* Darker text color for readability */
-}
-
-.text-container strong {
-  font-size: 18px; /* Slightly larger font size for headings */
-  color: #000; /* Bold headings in black */
-}
-
-.text-container ul {
-  margin-left: 50px; /* Indent the list */
-  list-style-type: disc; /* Use bullet points */
-}
-
-.text-container a {
-  color: #375a7f;
-  text-decoration: none; /* Remove underline from links */
-  transition: color 0.3s ease; /* Smooth color transition */
-}
-
-.text-container a:hover {
-  color: #2c4a64; 
-  text-decoration: none; /* Remove underline from links */
-}
-
-
-
-.project_profile_screenshot {
-  flex: 1; /* Make the screenshot take equal space */
-  min-width: 300px; /* Minimum width for the screenshot */
-}
-
-.project_profile_screenshot img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-
-/* Responsive Behavior */
-@media (max-width: 768px) {
-  .project_profile_container {
-    flex-direction: column; /* Stack the screenshot above the content */
-    align-items: center;
-  }
-
-  .project_profile_screenshot {
-    width: 100%;
-  }
-
-  .app_showcase_content {
-    width: 100%;
-    align-items: center;
-    text-align: center; /* Center-align the text */
-  }
-
-}
-
-
-.btn-icon-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.btn-icon.btn-full-width {
-  grid-column: 1 / -1; /* span all columns */
-  width: 100%;
-}
-
-
-
-
-.btn-icon {
-  font-weight: 400;
-  font-size: 20px; /* Keep the font size as large as the icon */
-  line-height: 1; /* Prevent extra spacing caused by default line-height */
-  transition: all 300ms ease;
-  padding: 1.2rem 1.5rem; /* Adjust padding to prevent overflow */
-  width: 180px; /* Allow button to adjust width to fit content */
-  border-radius: 2rem;
-  display: flex; /* Use flexbox for layout */
-  align-items: center; /* Center icon and text vertically */
-  justify-content: center; /* Center icon and text horizontally */
-  gap: 0.5rem; /* Add space between the icon and text */
-  box-sizing: border-box; /* Ensure padding is included within button size */
-  overflow: hidden; /* Prevent content from overflowing */
-}
-
-.btn-icon.btn-full-width {
-  width: 360px + 2rem; /* Allow button to adjust width to fit content */
-  flex-basis: 67%; /* Make the button take full width of the container */
-  text-align: center; /* Center-align text and icon */
-}
-
-
-.btn-icon img {
-  height: 30px; /* Icon height */
-  width: auto; /* Maintain aspect ratio */
-}
-
-
-
-
-
-
-
-
 
 
 
@@ -640,7 +513,7 @@ footer nav a:hover {
   display: flex;
   justify-content: center;
   gap: 120px;
-  flex-wrap: wrap; /* Allows wrapping for responsiveness */
+  flex-wrap: wrap;
 }
 
 .app_showcase_screenshot {
@@ -673,6 +546,45 @@ footer nav a:hover {
   flex-direction: column;
   gap: 10px;
 }
+
+.triple-button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.button-icon {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1; 
+  padding: 1.0rem 1.5rem; 
+  width: 180px; 
+  border-radius: 4rem;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 0.5rem;
+  box-sizing: border-box; 
+  overflow: hidden;
+}
+
+.button-icon.btn-full-width {
+  grid-column: 1 / -1;
+  width: 100%;
+  width: 360px + 2rem;
+  flex-basis: 67%;
+  text-align: center; 
+  padding: 1.2rem 1.5rem; 
+}
+
+
+.button-icon img {
+  height: 30px;
+  width: auto; 
+}
+
+
+
 
 
 /* Article */
@@ -738,8 +650,8 @@ footer nav a:hover {
 }
 
 code {
-  background: #111;
-  padding: 2px 6px;
+  background: var(--accent);
+  padding: 2px 2px;
   border-radius: 4px;
   font-size: 1.2em;
 }
@@ -749,7 +661,7 @@ pre {
   margin: 2em auto; /* centers horizontally */
   margin-top: 4em;
   margin-bottom: 4em;
-  background: #111;
+  background: var(--accent);
   color: #eee;
   padding: 0px;
   border-radius: 8px;
@@ -761,11 +673,49 @@ pre {
   margin: 1.5em auto;
   list-style-position: inside;
   padding-left: 0;
-  color: rgb(85, 85, 85);
+  color: var(--text-secondary);
 }
 
 .meta {
   color: #666;
   font-size: 0.9em;
   margin-bottom: 4em;
+}
+
+
+
+
+
+
+
+
+.text-container {
+  max-width: 1300px;
+  margin: 0 auto; /* Center the text container */
+  padding: 20px; /* Add some padding for better spacing */
+  font-family: Cantarell; /* Optional: Define a font family */
+  line-height: 1.6; /* Adjust line height for better readability */
+  font-size: 16px; /* Set the base font size */
+  color: #333; /* Darker text color for readability */
+}
+
+.text-container strong {
+  font-size: 18px; /* Slightly larger font size for headings */
+  color: #000; /* Bold headings in black */
+}
+
+.text-container ul {
+  margin-left: 50px; /* Indent the list */
+  list-style-type: disc; /* Use bullet points */
+}
+
+.text-container a {
+  color: #375a7f;
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.text-container a:hover {
+  color: #2c4a64; 
+  text-decoration: none; /* Remove underline from links */
 }
