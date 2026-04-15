@@ -86,8 +86,7 @@
     font-size: 1rem;
   }
   .profile-pic-container {
-    width: auto;
-    height: 46vw;
+    margin: 0 auto 2rem;
     justify-content: center;
   }
 }
