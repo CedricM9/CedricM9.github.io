@@ -1,10 +1,3 @@
-/* === 1400px and below === */
-@media screen and (max-width: 1400px) {
-  .about-containers {
-    flex-wrap: wrap;
-  }
-}
-
 /* === 1200px and below: switch to hamburger, single column === */
 @media screen and (max-width: 1200px) {
   #desktop-nav {
@@ -31,14 +24,6 @@
     height: 275px;
     margin: 0 auto 2rem;
   }
-  .arrow {
-    display: none;
-  }
-  .about-containers {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 0;
-  }
 }
 
 /* === 768px and below === */
@@ -62,54 +47,25 @@
     height: fit-content;
     margin-bottom: 2rem;
   }
-  .about-containers {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  .contact-info-upper-container,
-  .btn-container {
+  .contact-info-box {
     flex-wrap: wrap;
   }
-  .contact-info-container {
-    margin: 0;
-  }
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
-  }
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
-  .logo {
-    font-size: 1.5rem;
-  }
+
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
+  }
+  .nav-links li a {
+    font-size: 1rem;
   }
   .section__pic-container {
     width: auto;
     height: 46vw;
     justify-content: center;
   }
-  .section__text__p2 {
-    font-size: 1.25rem;
-  }
-  .title {
-    font-size: 2rem;
-  }
-  .text-container {
-    text-align: justify;
-  }
 }
 
-/* === Project grid === */
-.project-grid {
-  grid-template-columns: 1fr;
-  max-width: 1300px;
-  margin: 0 auto;
-}
 
 @media (min-width: 768px) {
   .project-grid {
