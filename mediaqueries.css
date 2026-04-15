@@ -19,7 +19,7 @@
     align-items: center;
     gap: 2rem;
   }
-  .section__pic-container {
+  .profile-pic-container {
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
@@ -59,7 +59,7 @@
   .nav-links li a {
     font-size: 1rem;
   }
-  .section__pic-container {
+  .profile-pic-container {
     width: auto;
     height: 46vw;
     justify-content: center;
