@@ -7,12 +7,11 @@
   --text-secondary:       #555555;
   --text-light:           #ffffff;
   --text-primary-hover:   #808080;
-  --text-secondary-hover: #d3d3d3;
+  --text-secondary-hover: #b3b3b3;
 
-  --bg:                   #FFFFFF;
-  --bg-2:                 #F8F8F6;
+  --bg:                   #F8F8F6;
   --bg-hover:             #EBECED;
-  --bg-subtle:            #F8F9FA;
+  --bg-subtle:            #ffffff;
 
   --accent:               #353535;
   --accent-hover:         #6e6d6d;
@@ -32,6 +31,7 @@ body {
 }
 
 html {
+  background: var(--bg);
   height: 100%;
   scroll-behavior: smooth;
 }
@@ -487,6 +487,9 @@ footer p a {
   color: var(--text-secondary);
 }
 
+footer nav a:hover {
+  color: var(--text-primary-hover);
+}
 
 
 footer a:hover {
@@ -581,6 +584,7 @@ footer a:hover {
 .button-icon img {
   height: 30px;
   width: auto; 
+  filter: brightness(100);
 }
 
 
