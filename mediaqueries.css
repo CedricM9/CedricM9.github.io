@@ -97,3 +97,16 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
+
+@media screen and (max-width: 1000px) and (max-height: 900px){
+  #profile {
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-height: 600px){
+  #profile {
+    margin-top: 10rem;
+  }
+}
