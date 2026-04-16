@@ -631,10 +631,12 @@ footer a:hover {
   border-radius: 16px;
   display: block;
   margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 #article .split img {
- max-width: 386px;
+  max-width: 386px;
 }
 
 /* Typography */
@@ -648,7 +650,7 @@ footer a:hover {
 }
 
 #article h3, h2 {
-  margin-top: 2em;
+  margin-top: 3em;
 }
 
 #article p {
@@ -692,6 +694,10 @@ pre {
   list-style-position: inside;
   padding-left: 0;
   color: var(--text-secondary);
+}
+
+#article li {
+  margin: 0.5em 0;
 }
 
 .meta {
