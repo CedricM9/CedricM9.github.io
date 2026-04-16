@@ -15,9 +15,9 @@
   <body>
     <!-- Navigation (Desktop) -->
     <nav id="desktop-nav">
-      <div class="logo-container">
-        <img src="./assets/favicon.svg" alt="Personal Logo" class="personal-logo" />
-        <div class="logo">
+      <div class="logo-name-container">
+        <img src="./assets/favicon.svg" alt="Personal Logo" class="logo" />
+        <div class="name">
           <a href="#desktop-nav">Cedric <b>Maume</b></a>
         </div>
       </div>
@@ -32,9 +32,9 @@
 
     <!-- Navigation (Hamburger) -->
     <nav id="hamburger-nav">
-      <div class="logo-container">
-        <img src="./assets/favicon.svg" alt="Personal Logo" class="personal-logo" />
-        <div class="logo">
+      <div class="logo-name-container">
+        <img src="./assets/favicon.svg" alt="Personal Logo" class="logo" />
+        <div class="name">
           <a href="#desktop-nav">Cedric <b>Maume</b></a>
         </div>
       </div>
@@ -54,25 +54,26 @@
 
     <!-- Profile Section -->
     <section id="profile">
-      <div class="section__pic-container">
+      <!-- TODO FIX THIS -->
+      <div class="profile-pic-container">
         <img src="./assets/profile-pic.webp" alt="Profile Picture" />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Cedric Maume</h1>
-        <p class="section__text__p2">Computational Engineering Student</p>
-        <div class="btn-container">
+        <p class="section__text__small">Hello, I'm</p>
+        <h1 class="section_title">Cedric Maume</h1>
+        <p class="profile_subtitle">Computational Engineer (B.Sc.)</p>
+        <div class="profile-button-container">
           <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/cv.pdf')"
+            class="button button-empty"
+            onclick="window.open('./assets/Cedric_Maume_CV.pdf')"
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='#contact'">
+          <button class="button button-filled" onclick="location.href='#contact'">
             Contact Info
           </button>
         </div>
-        <div id="socials-container">
+        <div id="flag-container">
           <img src="./assets/de.svg" alt="Germany Flag" class="icon" />
           <img src="./assets/ca.svg" alt="Canada Flag" class="icon" />
           <img src="./assets/us.svg" alt="USA Flag" class="icon" />
@@ -82,16 +83,16 @@
 
     <!-- Projects Section -->
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
+      <p class="section__text__small">Browse My Recent</p>
+      <h1 class="section_title">Projects</h1>
       <div class="project-grid">
         <!-- Project One -->
         <a href="projects/factor36.html" class="project-link">
-          <div class="details-container">
-            <div class="article-container">
+          <div class="project-tile">
+            <div class="project-img-container">
               <img src="./assets/factor36.webp" alt="Factor36" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">
+            <h2 class="project-title">
               Factor36
               <span class="project-icon">
                 <!--<img src="./assets/apple.png" alt="Apple Icon" />-->
@@ -109,29 +110,29 @@
 
         <!-- Project Two -->
         <a href="./projects/lightsaber.html" class="project-link">
-          <div class="details-container">
-            <div class="article-container">
+          <div class="project-tile">
+            <div class="project-img-container">
               <img src="./assets/lightsaber.png" alt="Lightsaber" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">
+            <h2 class="project-title">
               Lightsaber
               <span class="project-icon">
                 <img src="./assets/fusion360.png" alt="Fusion360 Icon" />
               </span>
             </h2>
             <p class="project-description">
-              A custom multi-part lightsaber designed in CAD and printed out of steel using an SLM 3D printer.
+              A custom and functioning multi-part lightsaber designed in CAD and printed out of metal on an SLM 3D printer.
             </p>
           </div>
         </a>
 
         <!-- Project Three -->
         <a href="./projects/server.html" class="project-link">
-          <div class="details-container">
-            <div class="article-container">
+          <div class="project-tile">
+            <div class="project-img-container">
               <img src="./assets/homeserver.webp" alt="Home Server" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">
+            <h2 class="project-title">
               Home Server
               <span class="project-icon">
                 <img src="./assets/freecad.png" alt="Freecad Icon" />
@@ -148,11 +149,11 @@
 
         <!-- Project Four -->
         <a href="https://github.com/CedricM9/CedricM9.github.io" class="project-link">
-          <div class="details-container">
-            <div class="article-container">
+          <div class="project-tile">
+            <div class="project-img-container">
               <img src="./assets/website.webp" alt="Website" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">
+            <h2 class="project-title">
               Website
               <span class="project-icon">
                 <img src="./assets/html.png" alt="HTML Icon" />
@@ -160,19 +161,19 @@
               </span>
             </h2>
             <p class="project-description">
-              This website was made using HTML and CSS, forked from a template to serve as a
-              personal portfolio with the intention of self-hosting it on a home server.
+              This website was made from scratch using HTML and CSS  to serve as a simple 
+              and lightweight personal portfolio.
             </p>
           </div>
         </a>
 
         <!-- Project Five -->
         <a href="https://github.com/CedricM9/awesome-dotfiles" class="project-link">
-          <div class="details-container">
-            <div class="article-container">
+          <div class="project-tile">
+            <div class="project-img-container">
               <img src="./assets/awesome.webp" alt="AwesomeWM" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">
+            <h2 class="project-title">
               AwesomeWM Dotfiles
               <span class="project-icon">
                 <img src="./assets/lua.png" alt="Lua Icon" />
@@ -187,11 +188,11 @@
 
         <!-- Project Six -->
         <a href="https://github.com/CedricM9/SPH-Surface-Reconstruction" class="project-link">
-          <div class="details-container">
-            <div class="article-container">
+          <div class="project-tile">
+            <div class="project-img-container">
               <img src="./assets/sph.png" alt="SPH Surface Reconstruction" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">
+            <h2 class="project-title">
               SPH Surface Reconstruction
               <span class="project-icon">
                 <img src="./assets/c++.png" alt="C++ Icon" />
@@ -208,24 +209,18 @@
 
     <!-- Contact Section -->
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+      <p class="section__text__small">Get in Touch</p>
+      <h1 class="section_title">Contact Me</h1>
+      <div class="contact-info-box">
+        <div class="contact-info-item">
+          <img src="./assets/email.png" alt="Email icon" class="icon email-icon" />
           <p><a href="mailto:work@cedricmaume.com">work@cedricmaume.com</a></p>
         </div>
-        <div class="contact-info-container">
-          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <div class="contact-info-item">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon" />
           <p><a href="https://www.linkedin.com/in/cedric-maume-487630256">LinkedIn</a></p>
         </div>
       </div>
-<!--
-      <div id="socials-container">
-        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="socials-icon" onclick="location.href='https://linkedin.com/'" />
-        <img src="./assets/github.png" alt="My Github profile" class="socials-icon" onclick="location.href='https://github.com/'" />
-      </div>
--->
     </section>
 
     <!-- Footer -->
@@ -239,7 +234,7 @@
           </ul>
         </div>
       </nav>
-      <p>&#169; 2025 Cedric Maume | <a href="./privacy.html">Privacy Policy</a></p>
+      <p>&#169; 2026 Cedric Maume | <a href="./privacy.html">Privacy Policy</a></p>
     </footer>
 
     <script src="script.js"></script>
