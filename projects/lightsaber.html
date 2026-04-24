@@ -148,7 +148,7 @@
               </div>
             </div>
 
-            <h2>Assembly</h2>
+            <h2>Preparation</h2>
 
             <p>In order to assemble the lightsaber, the aluminium tube was cut to length and then sanded down considerably. Because the 3D printed parts were intentionally oversized there would be no sloppy tolerances between parts, however it did require extensive post-processing to ensure a friction fit. In hindsight, a liner might be a more effective solution. Before being able to assemble the lightsaber, two additional parts had to be designed and printed:</p> 
 
@@ -166,9 +166,54 @@
               </div>
             </div>
 
-            <p>Finally all parts are complete and ready for assembly. Holes are drilled through the 3D printed components as well as the grip. The holes inside of the tube are tapped with M3 threads. Ho</p>
+            <p>With all of the parts complete, it was time to prepare the individual components for assembly. This meant drilling and tapping holes to create a solid structure. For the Joiner, Pommel, and Button Adapter, holes were drilled and tapped into the grip, allowing these components to be screwed together with M3 screws. The Emitter can then be attached to the Joiner using the through-holes that were directly incorporated into the 3D print, with a nut holding the components together.</p>
+            
+            <div class="section split">
+              <div class="content">
+                <p>All of the holes were drilled on a drill press. However, due to its age, the tolerances were not the tightest, and some holes ended up slightly off-center. To reduce errors during printing, I designed and printed two PLA holders which allowed the pieces to lie flat and ensured that the top surface remained perpendicular to the drill bit. This was done by adding the lightsaber component as a negative modifier to a simple box within <a href="https://orca-slicer.com/" target="_blank" rel="noopener noreferrer">Orca Slicer</a>. Although not perfect, the holes could still be manually tapped by hand to a level sufficient for assembly.</p>              </div>
+              <div class="media">
+                <img src="assets/lightsaber/holders.webp" alt="3D Printed Part Holders" />
+              </div>
+            </div>
 
-      </section>
+            <p>Additionally, larger holes (M10) had to be drilled for the button to fit through, as well as to provide access to the USB-C charging port. For the button, the Button Adapter was screwed in place, and the hole was manually filed to shape to ensure proper alignment. The charging port hole is located underneath the pommel, making it less visually critical.</p>      
+            
+            <img src="assets/lightsaber/charging_port.webp" alt="Charging Port Hole" />
+
+            <h2>Assembly</h2>
+
+            <p>With all of the parts machined, the only thing remaining was assembly. The first step was to push the electronics core into the 3D-printed sleeve. These two components are held together solely through a friction fit. The entire core was then slid inside the grip, ensuring that the button hole lined up correctly. Additionally, two of the pommel holes are used to prevent the electronics sleeve from rotating inside the grip. This ensures that the electronics have no range of motion and provides additional clearance for the 5mm screws used to secure the pommel.</p>
+
+            <img src="assets/lightsaber/assembly.webp" alt="Assembly"/>
+
+            <div class="section split">
+              <div class="content">
+                <p>Finally, the top assembly - consisting of the Joiner and Emitter - can be screwed together and then attached to the grip along with the pommel. Lastly, the Button Adapter can be mounted. The actual switch was inserted into the adapter and secured with hot glue to prevent any rattling. After connecting the JST connectors, they can be pushed into the grip, and the component can be aligned with the mounting holes.</p>              </div>
+              <div class="media">
+                <img src="assets/lightsaber/button_assembly.webp" alt="Assembling the Button" />
+              </div>
+            </div>
+
+            <div class="section split">
+              <div class="media">
+                <img src="assets/lightsaber/blade.webp" alt="Blade" />
+              </div>
+              <div class="content">
+                <p>With the grip completely assembled, the final step was inserting the Neopixel blade. To protect the soft polycarbonate from the steel of the emitter, several layers of masking tape were wrapped around the blade. This also provided additional stability, preventing the blade from wobbling during use. A gap was left in the section that aligns with the slits in the Joiner to ensure that light can escape.</p>              </div>
+            </div>
+
+            <p>Once the blade is inserted, it can be fastened using two M4 screws that pass through the entire Joiner section and thread into the grip. These screws apply pressure to the blade, ensuring that it does not twist or fall out of the front. This step marks the completion of the project.</p>
+            
+            <img src="assets/lightsaber/final.webp" alt="Final"/>
+
+            <p>Overall, the lightsaber was a fun and interdisciplinary project that helped me further develop my CAD and design skills, as well as my experience with electronics, soldering, and metal machining (including aluminum, steel, and even titanium). Everything went smoothly for the most part, aside from underestimating the difficulty of drilling into titanium (RIP drill bit). I would highly recommend others try designing and building their own lightsaber. The final hilt functions identically to the one I purchased, while offering a significantly more premium feel. The materials make it much heavier than typical aluminum (and more difficult to machine), but they provide a much more satisfying result. In the end, I couldn’t be happier with it :D</p>
+          
+          <details>
+            <summary>Details</summary>
+            Something small enough to escape casual notice.
+          </details>
+          
+          </section>
     </main>
 
 
