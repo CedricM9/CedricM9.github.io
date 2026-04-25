@@ -60,7 +60,7 @@
           <div class="content">
 
             <p>Ever since I was a child, I’ve wanted my own lightsaber. While it’s possible to buy one, designing and building my own always seemed far more interesting. I initially created a design consisting of 10 individual parts, intended to be manufactured using a mill and lathe. Since I didn’t have access to either machine, the project never progressed beyond the design stage.</p>
-            <img src="assets/lightsaber/render_old.png" alt="Old Lightsaber Design" />
+            <img src="../assets/projects/lightsaber/render_old.png" alt="Old Lightsaber Design" />
 
             <p>Several months later, a friend mentioned that a new <a href="https://en.wikipedia.org/wiki/Selective_laser_melting" target="_blank" rel="noopener noreferrer">Selective Laser Melting (SLM)</a> 3D printer was being set up at their workplace and required calibration. Through this, I had the opportunity to 3D print metal parts. This motivated me to redesign the lightsaber entirely, with two main goals:</p>            
             <ul> 
@@ -74,7 +74,7 @@
             
             <div class="section split">
               <div class="media">
-                <img src="assets/lightsaber/new_design_cad.png" alt="Factor36 Icon" />
+                <img src="../assets/projects/lightsaber/new_design_cad.png" alt="Factor36 Icon" />
               </div>
               <div class="content">
                 <p>Fortunately, many lightsaber components are standardized, allowing compatibility across different manufacturers. In particular, blade diameters are fairly consistent. After some research, I based my design on parts sold by <a href="https://nsabers.de/" target="_blank" rel="noopener noreferrer">NSabers</a>, since both blades and electronics could be sourced separately. I chose the 1-inch (25.4 mm) blade. The diameter of the electronics core wasn’t specified, so I slightly oversized the grip to ensure clearance. As it turned out, the core also had a diameter of 25.4 mm.</p>              </div>
@@ -90,7 +90,7 @@
               <li><strong>Button Adapter:</strong> Designed after completing the electronics, this part mounts the activation button to the grip.</li>
             </ul>
 
-            <img src="assets/lightsaber/new_design_render.webp" alt="New Lightsaber Design" />
+            <img src="../assets/projects/lightsaber/new_design_render.webp" alt="New Lightsaber Design" />
 
             <p>Throughout the design process, I followed <a href="https://www.jellypipe.com/en/blog-news/design-guidelines-slm-metal-3d-printing/" target="_blank" rel="noopener noreferrer">SLM design guidelines</a> as closely as possible to minimize support material and ensure printability. Once complete, I exported the parts as separate .obj files and sent them for printing.</p>
             
@@ -98,11 +98,11 @@
 
           <p>Upon receiving two of the three main components, it was clear that the machine parameters hadn’t yet been fully optimized. The parts showed consistent burn patterns and fused support structures. Fortunately, the emitter turned out quite well, as it wasn't reliant on support structures. The joiner, however, was more problematic due to its complex geometry.</p>
           
-          <img src="assets/lightsaber/emitter_joiner.webp" alt="First Printed Parts" />
+          <img src="../assets/projects/lightsaber/emitter_joiner.webp" alt="First Printed Parts" />
 
             <div class="section split">
               <div class="media">
-                <img src="assets/lightsaber/emitter.webp" alt="Factor36 Icon" />
+                <img src="../assets/projects/lightsaber/emitter.webp" alt="Factor36 Icon" />
               </div>
               <div class="content">
                 <p>I initially attempted to manually remove the supports and clean up the joiner, but since the parts were printed in steel, this proved extremely difficult. The emitter, however, was successfully finished through extensive hand filing, followed by a milling pass (after many hours were spent removing a few millimeters by hand). While not perfect, the final emitter looks great and is dimensionally accurate.</p>
@@ -113,7 +113,7 @@
 
             <p>The pommel, unlike the earlier components, was printed in titanium rather than steel. It looks and feels excellent, but the difference in material results in a slight color mismatch between parts. This is something to consider for future iterations.</p>
 
-            <img src="assets/lightsaber/pommel_joiner.webp" alt="Final Printed Parts" />
+            <img src="../assets/projects/lightsaber/pommel_joiner.webp" alt="Final Printed Parts" />
 
             <h2>Electronics</h2>
 
@@ -126,10 +126,10 @@
 
             <div class="section split">
               <div class="media">
-                <img src="assets/lightsaber/baselit.png" alt="Baselit Blade" />
+                <img src="../assets/projects/lightsaber/baselit.png" alt="Baselit Blade" />
               </div>
               <div class="media">
-                <img src="assets/lightsaber/neopixel.png" alt="Neopixel Blade" />
+                <img src="../assets/projects/lightsaber/neopixel.png" alt="Neopixel Blade" />
               </div>
             </div>
 
@@ -137,11 +137,11 @@
 
             <p>Despite the fact that the setup was fully functional, there was an issue that bugged me. Likely due to mass manufacturing requirements, the button did not sit flush with the grip, rather it was integrated into the electronics core and could then be pushed up through an oversised hole (using a screw on the underside).</p>
 
-            <img src="assets/lightsaber/old_button.webp" alt="Default Button Mechanism" />
+            <img src="../assets/projects/lightsaber/old_button.webp" alt="Default Button Mechanism" />
 
             <div class="section split">
               <div class="media">
-                <img src="assets/lightsaber/new_button.webp" alt="New Button Mechanism" />
+                <img src="../assets/projects/lightsaber/new_button.webp" alt="New Button Mechanism" />
               </div>
               <div class="content">
                 <p>While fully functional, I was unhappy with the gap this left within the grip. After the extensive effort I did not want the sole interaction method to look or feel unpolished, so I came up with a way to insert the button from the outside and connect it to the electronics core during assembly. I did this by unsoldering the PCB and soldering and crimping on a <a href="https://en.wikipedia.org/wiki/JST_connector" target="_blank" rel="noopener noreferrer">JST Connector</a> to both the button and the microcontroller located within the core. This allows me to join the JST Connectors while the electronic core is already inserted. The button can then be inserted from the outside and attached directly to the grip.</p>
@@ -159,10 +159,10 @@
 
             <div class="section split">
               <div class="media">
-                <img src="assets/lightsaber/electronics_sleeve.png" alt="Electronics Sleeve CAD" />
+                <img src="../assets/projects/lightsaber/electronics_sleeve.png" alt="Electronics Sleeve CAD" />
               </div>
               <div class="media">
-                <img src="assets/lightsaber/button_adapter.png" alt="Button Adapter CAD" />
+                <img src="../assets/projects/lightsaber/button_adapter.png" alt="Button Adapter CAD" />
               </div>
             </div>
 
@@ -172,31 +172,31 @@
               <div class="content">
                 <p>All of the holes were drilled on a drill press. However, due to its age, the tolerances were not the tightest, and some holes ended up slightly off-center. To reduce errors during printing, I designed and printed two PLA holders which allowed the pieces to lie flat and ensured that the top surface remained perpendicular to the drill bit. This was done by adding the lightsaber component as a negative modifier to a simple box within <a href="https://orca-slicer.com/" target="_blank" rel="noopener noreferrer">Orca Slicer</a>. Although not perfect, the holes could still be manually tapped by hand to a level sufficient for assembly.</p>              </div>
               <div class="media">
-                <img src="assets/lightsaber/holders.webp" alt="3D Printed Part Holders" />
+                <img src="../assets/projects/lightsaber/holders.webp" alt="3D Printed Part Holders" />
               </div>
             </div>
 
             <p>Additionally, larger holes (M10) had to be drilled for the button to fit through, as well as to provide access to the USB-C charging port. For the button, the Button Adapter was screwed in place, and the hole was manually filed to shape to ensure proper alignment. The charging port hole is located underneath the pommel, making it less visually critical.</p>      
             
-            <img src="assets/lightsaber/charging_port.webp" alt="Charging Port Hole" />
+            <img src="../assets/projects/lightsaber/charging_port.webp" alt="Charging Port Hole" />
 
             <h2>Assembly</h2>
 
             <p>With all of the parts machined, the only thing remaining was assembly. The first step was to push the electronics core into the 3D-printed sleeve. These two components are held together solely through a friction fit. The entire core was then slid inside the grip, ensuring that the button hole lined up correctly. Additionally, two of the pommel holes are used to prevent the electronics sleeve from rotating inside the grip. This ensures that the electronics have no range of motion and provides additional clearance for the 5mm screws used to secure the pommel.</p>
 
-            <img src="assets/lightsaber/assembly.webp" alt="Assembly"/>
+            <img src="../assets/projects/lightsaber/assembly.webp" alt="Assembly"/>
 
             <div class="section split">
               <div class="content">
                 <p>Finally, the top assembly - consisting of the Joiner and Emitter - can be screwed together and then attached to the grip along with the pommel. Lastly, the Button Adapter can be mounted. The actual switch was inserted into the adapter and secured with hot glue to prevent any rattling. After connecting the JST connectors, they can be pushed into the grip, and the component can be aligned with the mounting holes.</p>              </div>
               <div class="media">
-                <img src="assets/lightsaber/button_assembly.webp" alt="Assembling the Button" />
+                <img src="../assets/projects/lightsaber/button_assembly.webp" alt="Assembling the Button" />
               </div>
             </div>
 
             <div class="section split">
               <div class="media">
-                <img src="assets/lightsaber/blade.webp" alt="Blade" />
+                <img src="../assets/projects/lightsaber/blade.webp" alt="Blade" />
               </div>
               <div class="content">
                 <p>With the grip completely assembled, the final step was inserting the Neopixel blade. To protect the soft polycarbonate from the steel of the emitter, several layers of masking tape were wrapped around the blade. This also provided additional stability, preventing the blade from wobbling during use. A gap was left in the section that aligns with the slits in the Joiner to ensure that light can escape.</p>              </div>
@@ -204,7 +204,7 @@
 
             <p>Once the blade is inserted, it can be fastened using two M4 screws that pass through the entire Joiner section and thread into the grip. These screws apply pressure to the blade, ensuring that it does not twist or fall out of the front. This step marks the completion of the project.</p>
             
-            <img src="assets/lightsaber/final.webp" alt="Final"/>
+            <img src="../assets/projects/lightsaber/final.webp" alt="Final"/>
 
             <p>Overall, the lightsaber was a fun and interdisciplinary project that helped me further develop my CAD and design skills, as well as my experience with electronics, soldering, and metal machining (including aluminum, steel, and even titanium). Everything went smoothly for the most part, aside from underestimating the difficulty of drilling into titanium (RIP drill bit). I would highly recommend others try designing and building their own lightsaber. The final hilt functions identically to the one I purchased, while offering a significantly more premium feel. The materials make it much heavier than typical aluminum (and more difficult to machine), but they provide a much more satisfying result. In the end, I couldn’t be happier with it :D</p>
           
@@ -213,19 +213,19 @@
 
               <div class="section split">
                 <div class="media">
-                  <img src="assets/lightsaber/gallery_1.webp" alt="Gallery 1" />
+                  <img src="../assets/projects/lightsaber/gallery_1.webp" alt="Gallery 1" />
                 </div>
                 <div class="media">
-                  <img src="assets/lightsaber/gallery_2.webp" alt="Gallery 2" />
+                  <img src="../assets/projects/lightsaber/gallery_2.webp" alt="Gallery 2" />
                 </div>
               </div>
 
               <div class="section split">
                 <div class="media">
-                  <img src="assets/lightsaber/gallery_3.webp" alt="Gallery 3" />
+                  <img src="../assets/projects/lightsaber/gallery_3.webp" alt="Gallery 3" />
                 </div>
                 <div class="media">
-                  <img src="assets/lightsaber/gallery_4.webp" alt="Gallery 4" />
+                  <img src="../assets/projects/lightsaber/gallery_4.webp" alt="Gallery 4" />
                 </div>
               </div>
             </details>
